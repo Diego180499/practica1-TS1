@@ -1,0 +1,196 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contenedor-app{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.imagen{
+    background-image: url("../img/login.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+/*CONTENIDO DE LA APP*/
+
+
+
+/*LOGIN*/
+
+.titulo-login{
+    text-align: center;
+    font-weight: bold;
+    color: brown;
+}
+
+.contenedor-formulario{
+    width: 90%;
+    margin: auto;
+}
+
+.formulario{
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    border-bottom: 2px solid green;
+}
+
+.formulario form{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.formulario .campo{
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.campo label{
+    font-weight: bold;
+    font-size: 2rem;
+    color: brown;
+}
+
+.campo input{
+    font-size: 2rem;
+    color: darkgreen;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid brown;
+}
+
+.campo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton{
+    width: 50%;
+    background-color: darkgreen;
+    color: white;
+    font-size: 2rem;
+    border: 0.7rem solid green;
+    cursor: pointer;
+}
+
+.opciones{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.opciones a{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.boton:hover{
+    background-color: rgba(17, 202, 17, 0.884);
+    border: none;
+    padding: 1rem;
+    color: black;
+}
+
+.regresar{
+    margin: 3rem;
+}
+
+.enlace{
+    background-color: blue;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid darkblue;
+}
+
+.enlace:hover{
+    background-color: darkblue;
+}
+
+/*JUEGO*/
+
+.contenedor-juego{
+    text-align: center;
+}
+
+.contenedor-enlace{
+    margin: 3rem;
+}
+
+.enlace-jugadores{
+    background-color: green;
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+/*JUGADORES*/
+
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.tabla{
+    text-align: center;
+    width: 75%;
+    border: 3px solid green;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.tabla thead{
+    font-weight: 900;
+}
+
+thead,tbody:hover{
+    background-color: rgb(72, 180, 72);
+}
+
+.enlace-editar{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace-eliminar{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
